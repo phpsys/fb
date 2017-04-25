@@ -10,3 +10,6 @@ for link in soup.findAll('a'):
     a = str(link.get('href'))
     if 'ref_page_id' in a:
         print((a.strip().split("&"))[0].strip().split("=")[1])
+
+
+print("ok")
